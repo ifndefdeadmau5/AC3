@@ -16,7 +16,7 @@ const cache = new InMemoryCache({
             // to compute the argument values. Note that this function will invoke
             // custom read functions for other fields, if defined. Always returns
             // immutable data (enforced with Object.freeze in development).
-            const id = readField('id'); // <--- read field within the 'current' object, no other params are required
+            const id = readField('id'); // <--- read field within the 'current' object, no additional param is required for this ;)
             return cachedValue ? cachedValue : false;
           },
         },
